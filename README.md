@@ -1,3 +1,5 @@
+[![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/7wcZZzeSQk)
+
 # About Spoonfy
 **tl;dr**: Spoonfy helps build foreign-language listening skill using AI in a new & unique way. Watch the demo video below to see & hear Spoonfy in action. It's Despacito so it might be a little NSFW:
 
@@ -92,3 +94,10 @@ The transcription (Audio->Per-word timestamps) model is a pretrained Wav2Vec2 mo
 You'll find `main()` in `spoonfy.py`. The various steps done to produce the LitK subtitles are split into different .py files and called from `main()`. See the last group of imports in `spoonfy.py`. Some common data classes are found in `common.py` and a few helper functions are found in `util.py`.
 
 The actual models used for translation & transcription are not found in this repo, see the previous section for links.
+
+# Help wanted!
+Come join the project and help the world understand each other like never before! I intend to keep Spoonfy free & open source as I feel something as fundamental as language learning is too important to the world to put behind a paywall.
+
+I'm looking for all kinds of help, from graphic/web designers to ML engineers to app programmers to linguists and anyone & everyone with a good idea/feedback to share.
+
+Join the Discord, come say hi: [![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/7wcZZzeSQk)
