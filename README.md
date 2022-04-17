@@ -1,7 +1,7 @@
 # About Spoonfy
 **tl;dr**: Spoonfy helps build foreign-language listening skill using AI in a new & unique way. Watch the demo video below to see & hear Spoonfy in action. It's Despacito so it might be a little NSFW:
 
-[![Watch the video](https://lh4.googleusercontent.com/k8I1bl6Fr27nJq5zxRW63cVukOV0mJNwmUd2bM9ccLyUMwXlbl39QqMBHjgQZBepVDBMu42UOIvlow=w1920-h1080-k-pd)](https://drive.google.com/file/d/12qYKv_yaqGr9GWvHPtE9ng2foJVPfpoE/view?usp=sharing)
+[![Watch the video](thumbnail.jpg)](https://drive.google.com/file/d/12qYKv_yaqGr9GWvHPtE9ng2foJVPfpoE/view?usp=sharing)
 
 **What is Spoonfy?** Spoonfy (short for "spoon-feed") is an experimental language learning system made possible by recent advances in state-of-the-art deep learning (AI).
 
