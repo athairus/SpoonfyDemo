@@ -1,0 +1,19 @@
+## ML
+transformers  # Translation, transcription
+tokenizers  # Translation
+datasets
+
+## NLP
+sentencepiece  # Needed to import the translation model: https://github.com/huggingface/transformers/issues/9250
+syltippy  # Counts syllables to enforce a certain target syllables/sec
+
+## AV
+ffmpeg-python  # ffprobe: Get duration, framerate, sample rate from input video
+srt  # Parses inputs
+pydub  # Splits input audio into separate .wav files
+librosa  # Loads .wav files into tensors
+
+## Misc
+black  # Code formatting
+tqdm  # Progress reporting
+rich  # Rich text in the terminal
