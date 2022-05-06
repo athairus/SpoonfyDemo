@@ -3,7 +3,7 @@ from common import *
 from pathlib import Path
 import torch
 import librosa
-from datasets import Dataset
+from datasets import Dataset, enable_progress_bar, disable_progress_bar
 from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 from datasets.table import InMemoryTable
 import pandas as pd
@@ -183,10 +183,12 @@ def get_timings(processor: Wav2Vec2Processor, model: Wav2Vec2ForCTC, speech_file
             batch["tokenized_sentence"] = processor(batch["sentence"])["input_ids"]
         return batch
 
+    disable_progress_bar()
     test_dataset = test_dataset.map(speech_file_to_array_fn)
     inputs = processor(
         test_dataset["speech"], sampling_rate=16_000, return_tensors="pt", padding=True
     )
+    enable_progress_bar()
 
     with torch.no_grad():
         logits = model(inputs.input_values.to(device), attention_mask=inputs.attention_mask.to(device)).logits
