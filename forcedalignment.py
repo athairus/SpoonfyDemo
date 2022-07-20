@@ -64,11 +64,13 @@ def get_word_timings(
             if not word:
                 word = "-"
             preproc_sent.append(word)
-        preproc_sent = " ".join(preproc_sent)
+        # These dashes will serve as placeholder characters to keep the real first/last words from "sticking" to the edges of the audio snippet
+        preproc_sent = "- " + " ".join(preproc_sent) + " -" 
 
         # Get start, end times
         # TODO: Batch inputs
         times = asrtest.get_timings(processor, model, [wav_fn], workdir, [preproc_sent], [sub.start])[0]
+        times = times[1:-1] # Remove the dashes
         for i in range(len(times)):
             start, end = times[i]
             groups[i + group_offset].start = start + sent_offset
